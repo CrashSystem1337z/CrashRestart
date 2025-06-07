@@ -1,0 +1,13 @@
+name: CrashRestart
+version: 1.0
+main: CrashRestart
+api-version: 1.16
+description: Ежедневная перезагрузка сервера с возможностью ручного запуска и ссылкой на GitHub.
+commands:
+  restart:
+    description: Перезапускает сервер немедленно или выводит ссылку на GitHub разработчика.
+    usage: /restart [link]
+permissions:
+  restart.use:
+    description: Позволяет запустить перезагрузку сервера командой /restart
+    default: op
